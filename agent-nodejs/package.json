@@ -1,6 +1,6 @@
 {
   "name": "slao",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "SLAO collects metrics of your REST API and provides insights",
   "main": "dist",
   "scripts": {
