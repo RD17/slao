@@ -14,6 +14,6 @@ Unlike other overloaded APMs, SLAO is about the essentials: requests’ rate and
 
 We do not collect any sensitive data like query parametes, request or response body, headers or cookies, SLAO agent is open-source.
 
-Check out the gif below
+Check out the gif below.
 
 ![SLAO](https://slao.io/SLAO.gif)
