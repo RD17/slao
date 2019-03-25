@@ -25,7 +25,7 @@ var slao = require('slao').default
 //It's important to add slao as the first handler to your express app
 app.use(slao.init({
     appName: 'your-app-name', 
-    apiKey: '8e38f18a68f1a1a01d2c1dff442ee150e0888bc3dca97048b4000b0d05a28fd0' })
+    apiKey: '<YOUR API KEY>' })
 )
 
 app.get('/', function (req, res) {
