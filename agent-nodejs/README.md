@@ -1,12 +1,12 @@
-# SLAO
+# SLAO Node.js agent
 
-**SLAO collects metrics of your REST API and provides insights**
+**SLAO collects metrics, monitors the performance and correctness of your API from a single, simple dashboard.**
 
-[https://slao.io]()
+[https://slao.io](https://slao.io)
 
 ## Installation
 
-Add SLAO to your nodejs application with
+Add SLAO to your Node.js application with
 
 > yarn add slao
 
@@ -61,7 +61,3 @@ api.get((req, res) => {
 })
 
 ```
-
-
-
-
