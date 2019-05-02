@@ -49,7 +49,7 @@ After adding this two lines of code, you'll see every request that your applicat
 
 ## Using with Docker
 
-By default when you call ```os.hostname()``` from the inside of a Docker container it returns the container id, not the hostname where you're running the container. To avoid this set ```SLAO_HOSTNAME=<your host name>``` env variable for your docker container using SLAO.
+By default when you call ```os.hostname()``` from the inside of a Docker container it returns the container id, not the hostname where you're running the container. To avoid this set ```SLAO_HOSTNAME=<your host name>``` env variable for your Docker container using SLAO.
 
 ## Custom Tags
 
