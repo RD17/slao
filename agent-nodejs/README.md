@@ -1,12 +1,12 @@
-# SLAO
+# SLAO Node.js agent
 
-**SLAO collects metrics of your REST API and provides insights**
+**SLAO is a monitoring and alerting service for Node.js microservices**
 
-[https://slao.io]()
+[https://slao.io](https://slao.io)
 
 ## Installation
 
-Add SLAO to your nodejs application with
+Add SLAO to your Node.js application with
 
 > yarn add slao
 
@@ -46,6 +46,10 @@ After adding this two lines of code, you'll see every request that your applicat
 **hostname** - name of your host, defaults to ```os.hostname()```, can be overriden by ```SLAO_HOSTNAME``` env variable
 
 **apiKey** - your api key, can be overriden by ```SLAO_API_KEY``` env variable
+
+## Using with Docker
+
+By default when you call ```os.hostname()``` from the inside of a Docker container it returns the container id, not the hostname where you're running the container. To avoid this set ```SLAO_HOSTNAME=<your host name>``` env variable for your Docker container using SLAO.
 
 ## Custom Tags
 

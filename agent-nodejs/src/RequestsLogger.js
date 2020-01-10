@@ -61,14 +61,22 @@ class RequestLogger {
 
     if (!this._options.initialized) {
       return (req, res, next) => {
-        res.slao = { uuid: null, setTags: (tags) => { } }
+        res.slao = {
+          uuid: null,
+          setTags: () => { },
+          setFields: () => { }
+        }
         next()
       }
     }
 
     return (req, res, next) => {
       const uuid = getUuid()
-      res.slao = { uuid, setTags: (tags) => _instance._eventRepository.logTags(uuid, tags) }
+      res.slao = {
+        uuid,
+        setTags: (tags) => _instance._eventRepository.logTags(uuid, tags),
+        setFields: (fields) => _instance._eventRepository.logFields(uuid, fields)
+      }
 
       _instance._eventRepository.logTimestamp(uuid, dayjs().valueOf())
       _instance._eventRepository.logTags(uuid, {
